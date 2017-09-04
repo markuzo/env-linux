@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# typematic delay and rate
+xset r rate 200 30

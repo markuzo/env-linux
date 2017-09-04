@@ -15,12 +15,19 @@ set tags=tags;/
 " nerdtree
 silent! nmap <F4> :NERDTreeToggle<CR>
 silent! map <F3> :NERDTreeFind<CR>
+silent! nmap ,n :NERDTreeFind<CR>
 let g:NERDTreeMapActivateNode="<F3>"
 let g:NERDTreeMapPreview="<F4>"
 
 " tagbar
 nmap <F8> :TagbarToggle<CR>
 
-" ycm
-let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py"
-let g:ycm_confirm_extra_conf = 0
+" syntastic stuff
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
