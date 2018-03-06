@@ -15,6 +15,7 @@ set tags=tags;/
 " nerdtree
 silent! nmap <F4> :NERDTreeToggle<CR>
 silent! map <F3> :NERDTreeFind<CR>
+silent! nmap ,m :NERDTreeToggle<CR>
 silent! nmap ,n :NERDTreeFind<CR>
 let g:NERDTreeMapActivateNode="<F3>"
 let g:NERDTreeMapPreview="<F4>"
@@ -31,3 +32,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" c++ specifcs
+autocmd Filetype cpp setlocal expandtab tabstop=2 shiftwidth=2
