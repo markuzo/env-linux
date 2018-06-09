@@ -7,6 +7,9 @@ set mouse=a
 set smartindent
 set expandtab tabstop=4 shiftwidth=4 smarttab
 
+set undofile
+set undodir=~/.vim/undodir
+
 syntax enable
 
 " ctags

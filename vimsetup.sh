@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir -p ~/.vim/autoload ~/.vim/bundle
+mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.vim/undodir
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp
