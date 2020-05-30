@@ -14,6 +14,7 @@ syntax enable
 
 " ctags
 set tags=tags;/
+:map <C-K> :CtrlPTag<CR>
 
 " nerdtree
 silent! nmap <F4> :NERDTreeToggle<CR>
