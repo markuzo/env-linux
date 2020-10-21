@@ -1,0 +1,10 @@
+- download packages (for i in $(cat packages); do sudo apt install $i; done) - names could be different on different distros
+- vimsetup.sh - installs vim plugins
+- mkdir ~/.markuzo && cp -r path/ ~/.markuzo/path/
+- cp tmux.conf ~/.tmux.conf && cp vimrc ~/.vimrc
+- git config --global user.name ""
+- git config --global user.email ""
+- git config --global merge.tool vimdiff
+
+- opt: Xmodmap stuff (if not sshing)
+- opt: keyboard stuff (if not sshing)
