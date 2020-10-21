@@ -2,7 +2,7 @@
 
 # pass in params or use .src
 code=$@
-if [ $@ -eq 0 ]
+if [ $# -eq 0 ]
 then
     code=src/
 fi
